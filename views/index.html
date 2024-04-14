@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkShort</title>
+  <link rel="stylesheet" href="/main.css">
+  <script src="/client.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="title">
+      <h1>Shortiko</h1>
+      <span>Made your links more shorts</span>
+    </div>
+    
+    <form id="urlForm">
+      <label for="urlInput" id="urlInputL">
+        <small>Url</small>
+        <input type="text" id="urlInput" placeholder="www.behance.net/creatilive-portfolio" autocomplete="off" autofocus>
+      </label>
+      
+      <label for="nameInput">
+        <small>Hash</small>
+        <input type="text" id="nameInput" placeholder="portfolio" autocomplete="off">
+      </label>
+
+      <label for="passInput">
+        <small>Auth</small>
+        <input type="password" id="passInput" placeholder="User password" autocomplete="off">
+      </label>
+      
+      <input type="submit" value="Create Url">
+    </form>
+
+    <div id="link">
+      <span>Your shorted link is: </span>
+      <a href="/" id="aLink" target="_blank"></a>
+    </div>
+    
+    <div>
+      <h2>Recents links generated</h2>
+      <section id="listOfLinks"></section>
+    </div>
+
+  </main>
+  <footer>
+    <p>developed by <a href="https://arkane-dev.netlify.app/portfolio" target="_blank">Arkane dev</a></p>
+  </footer>
+</body>
+
+</html>
