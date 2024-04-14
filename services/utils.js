@@ -1,4 +1,4 @@
-const rootUrl = `http://localhost:3000/`;
+const rootUrl = `https://shortiko.onrender.com/`;
 
 function createLink(key) {
   return rootUrl + 'l/' + key;
